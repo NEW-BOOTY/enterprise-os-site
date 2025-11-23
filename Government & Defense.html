@@ -1,0 +1,213 @@
+<!--
+ * Copyright © 2025 Devin B. Royal.
+ * All Rights Reserved.
+ *
+ * File: government.html
+ * Purpose: Dedicated Government & Defense landing page for Enterprise-OS™
+ * Suggested URL: /government or /defense
+ * Deployment: Place alongside index.html on any static web server
+ * Styling: Pure HTML + Tailwind CSS v3.4+ via CDN – zero build step, zero dependencies
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enterprise-OS™ for Government & Defense – COTS, zero-telemetry, air-gapped automation framework for classified, SCIF, and mission-critical environments.">
+    <title>Enterprise-OS™ for Government & Defense</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0d47a1',    // Official deep federal blue
+                        accent: '#1565c0',
+                        govdark: '#0b1e33',    // Near-black for authority
+                    },
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-govdark text-gray-950 text-white font-sans leading-relaxed">
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-gradient-to-b from-black to-govdark pt-24 pb-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight uppercase">
+                Enterprise-OS™ for Government & Defense
+            </h1>
+            <p class="mt-8 text-xl md:text-2xl font-light max-w-5xl mx-auto opacity-90">
+                A COTS, zero-telemetry, zero-dependency automation framework engineered for air-gapped, secure, and classified environments.
+            </p>
+
+            <div class="mt-12 flex flex-col sm:flex-row gap-8 justify-center items-center">
+                <a href="mailto:DEVIN-ROYAL@PROGRAMMER.NET?subject=Request%20Government%20Briefing%20-%20Enterprise-OS"
+                   class="px-10 py-5 bg-primary hover:bg-accent text-white font-bold text-xl rounded-none shadow-2xl transition uppercase tracking-wider">
+                    Request Government Briefing
+                </a>
+                <a href="mailto:DEVIN-ROYAL@PROGRAMMER.NET?subject=Request%20Government%20Addendum%20&%20Risk%20Packet"
+                   class="px-10 py-5 border-2 border-white hover:bg-white hover:text-black text-white font-bold text-xl rounded-none transition uppercase tracking-wider">
+                    Download Government Addendum & Risk Packet
+                </a>
+            </div>
+
+            <p class="mt-12 text-lg opacity-80 max-w-4xl mx-auto">
+                Designed for programs that must satisfy <strong>NIST, DFARS-aligned expectations, Zero Trust, and strict supply-chain scrutiny</strong>.
+            </p>
+        </div>
+    </header>
+
+    <!-- SECTION 2 – MISSION-FOCUSED PROBLEM -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-black text-center mb-16 uppercase">Modern Tools Assume the Internet.<br>Your Missions Don’t.</h2>
+            <div class="grid md:grid-cols-2 gap-12 text-lg">
+                <ul class="space-y-8 list-none">
+                    <li class="flex"><span class="text-primary mr-4">■</span> Cloud assumptions: Most automation platforms assume open internet access and SaaS control planes.</li>
+                    <li class="flex"><span class="text-primary mr-4">■</span> Uncontrolled supply chains: Open-source dependencies and third-party services introduce unbounded risk.</li>
+                </ul>
+                <ul class="space-y-8 list-none">
+                    <li class="flex"><span class="text-primary mr-4">■</span> Telemetry by default: Even “on-prem” software quietly sends data out for analytics, licensing, and tracking.</li>
+                    <li class="flex"><span class="text-primary mr-4">■</span> Compliance friction: Tools built for commercial SaaS environments rarely survive serious review from government security, AO, or program offices.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 – WHAT WE PROVIDE -->
+    <section class="py-20 bg-govdark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-12 uppercase">A Controlled, Offline Automation Framework for Sensitive Systems</h2>
+            <div class="grid md:grid-cols-3 gap-10 text-lg font-medium">
+                <div>COTS, not GOTS – ready for acquisition with internal configuration control</div>
+                <div>No Telemetry, No Callbacks – zero outbound connections</div>
+                <div>No Open-Source Dependencies – no OSS licensing or vulnerabilities</div>
+                <div>Air-Gap & SCIF Ready – fully disconnected operation</div>
+                <div>Deterministic Execution – auditable, predictable behavior</div>
+                <div>Single accountable owner – Devin Benard Royal</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 – ALIGNMENT -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-16 uppercase">Aligned with Federal and DoD Security Frameworks</h2>
+            <div class="grid md:grid-cols-3 gap-10 text-lg">
+                <div>• NIST SP 800-53 (Moderate/High)</div>
+                <div>• NIST SP 800-171 / CUI</div>
+                <div>• Zero Trust Architecture</div>
+                <div>• CIS Controls v8</div>
+                <div>• DFARS 7012–7020 / CMMC</div>
+                <div>• Air-gapped / SCIF patterns</div>
+            </div>
+            <p class="mt-12 text-lg opacity-80 max-w-4xl mx-auto italic">
+                Enterprise-OS™ is not a certification claim — it is architectural and operational alignment built to withstand federal scrutiny and security review.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 5 – USE CASES -->
+    <section class="py-20 bg-govdark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black text-center mb-16 uppercase">Where Government Teams Use Enterprise-OS™</h2>
+            <ul class="text-lg space-y-6 max-w-4xl mx-auto text-left">
+                <li>• Automation inside secure enclaves where cloud is not authorized</li>
+                <li>• Orchestration of tasks in mission systems without external dependencies</li>
+                <li>• Controlled automation layer for contractor-built systems</li>
+                <li>• OEM component for secure devices, appliances, or mission platforms</li>
+                <li>• Infrastructure workflows inside classified or restricted networks</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 6 – SUPPLY CHAIN -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-12 uppercase">Supply Chain and Export Considerations</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-lg">
+                <div>Fully proprietary codebase</div>
+                <div>No open-source components</div>
+                <div>No dynamic downloads</div>
+                <div>ITAR/EAR-conscious design</div>
+                <div>Clear ownership & IP control</div>
+                <div>Single point of accountability</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 – ENGAGEMENT MODEL -->
+    <section class="py-20 bg-govdark">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-12 uppercase">Government & Defense Engagement Model</h2>
+            <ol class="text-lg space-y-6 max-w-3xl mx-auto text-left">
+                <li>1. Initial Technical / Mission Fit Call</li>
+                <li>2. Provision of Government Addendum & Risk Documents</li>
+                <li>3. Pilot or Lab Evaluation</li>
+                <li>4. Contracting & Licensing (COTS or OEM route)</li>
+                <li>5. Ongoing Support (air-gapped procedures)</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- SECTION 8 – MESSAGE TO LEADERSHIP -->
+    <section class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-12 uppercase">For Program Offices, CISOs, and Authorizing Officials</h2>
+            <p class="text-xl max-w-5xl mx-auto opacity-90 leading-relaxed">
+                Enterprise-OS™ is <strong>explainable</strong> to security review boards: no telemetry, no third-party dependencies, no uncontrolled cloud calls, no OSS licensing complications.<br><br>
+                If your mission requires automation but your security posture rejects most commercial tools, Enterprise-OS™ is built for that gap.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 9 – FINAL GOVERNMENT CTA -->
+    <section class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-10 uppercase">Request a Government / Defense Briefing</h2>
+            <p class="text-xl max-w-4xl mx-auto mb-12">
+                If you represent a federal agency, DoD program, defense contractor, or other government organization and need to understand how Enterprise-OS™ fits into your security and mission requirements, the next step is a focused technical and security briefing.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
+                <a href="mailto:DEVIN-ROYAL@PROGRAMMER.NET?subject=Request%20Secure%20Government%20Briefing%20-%20Enterprise-OS"
+                   class="px-12 py-6 bg-white text-primary hover:bg-gray-200 font-black text-2xl rounded-none shadow-2xl transition uppercase tracking-wider">
+                    Request Secure Briefing
+                </a>
+                <a href="mailto:DEVIN-ROYAL@PROGRAMMER.NET?subject=Request%20Government%20Documentation%20Pack"
+                   class="px-12 py-6 border-4 border-white hover:bg-white hover:text-primary font-black text-2xl rounded-none transition uppercase tracking-wider">
+                    Request Documentation Pack
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER – GOVERNMENT CONTACT -->
+    <footer class="bg-black py-16 border-t-4 border-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-lg uppercase tracking-widest opacity-70">Government & Defense Contact</p>
+            <p class="text-3xl font-black mt-4">DEVIN BENARD ROYAL</p>
+            <p class="mt-8 text-xl">
+                <a href="mailto:DEVIN-ROYAL@PROGRAMMER.NET" class="underline hover:no-underline">DEVIN-ROYAL@PROGRAMMER.NET</a>
+            </p>
+            <p class="mt-4 text-xl">
+                (650) 360-7400 &nbsp; | &nbsp; (650) 664-0543
+            </p>
+            <p class="mt-12 text-sm opacity-60">
+                Copyright © 2025 Devin B. Royal. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
